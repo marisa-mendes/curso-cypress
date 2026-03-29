@@ -9,4 +9,19 @@ describe('Página de cadastro', () => {
     cy.contains ('button', 'Cadastrar').click();
 
   })
+  it('Carregar a página corretamente e clicar no botão "Ver pets disponíveis para adoção"', () =>{
+    cy.visit('https://adopet-frontend-cypress.vercel.app/');
+    cy.get('.button').click()
+
+  })
+  it('Visitar a página principal do AdoPet e testar os botões de Home', () =>{
+    cy.visit('https://adopet-frontend-cypress.vercel.app/');
+    cy.get('.header__home').click()
+
+  })
+  it('Visitar a página de /login do AdoPet', () =>{
+    cy.visit('https://adopet-frontend-cypress.vercel.app/login')
+  })
+
+
 })

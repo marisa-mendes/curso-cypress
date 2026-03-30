@@ -1,5 +1,6 @@
 describe('Página de cadastro', () => {
   it('Preencher os campos do formulário corretamente para cadastrar um novo usuário', () => {
+    cy.viewport(1440,900);
     cy.visit('https://adopet-frontend-cypress.vercel.app/');
     cy.get('[data-test="register-button"]').click();
     cy.get('input[name="nome"]').type('Max');
